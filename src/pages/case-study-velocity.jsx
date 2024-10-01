@@ -127,7 +127,7 @@ const Velocity = () => {
             </h1>
           </div>
 
-          <div className="p-4 font-inter text-base md:text-xl m-4">
+          <div className="p-4 font-inter text-base md:text-xl m-4 text-center">
             <p>
               The launch of Velocity was met with widespread acclaim for its
               ease and flexibility of use. Users praised its ability to
@@ -142,7 +142,7 @@ const Velocity = () => {
         </main>
 
         {/* Column 2 - Sticky Sidebar */}
-        <div className="w-full md:w-1/4 p-4 font-inter">
+        <div className="w-full md:w-1/4 p-4 font-exo2 uppercase">
           <div className="sticky top-[30%]">
             <h3 className="opacity-60 p-4">Industry</h3>
             <h2 className="p-4">GAME DEVELOPMENT</h2>

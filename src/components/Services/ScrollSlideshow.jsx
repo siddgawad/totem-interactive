@@ -3,55 +3,55 @@ import saas from "../../assets/service/saas.png";
 import webd from "../../assets/service/webdesign.jpg";
 import game from "../../assets/service/game.png";
 import upbutton from "../../assets/upbutton.png"; // Ensure this path is correct
+import servicessaas from "../../assets/service/servicessaas.png";
+import gamedev from "../../assets/gamedev.png";
+import webexp from "../../assets/webdev-exp/webexp.png";
+import arvrexp from "../../assets/arvrexp/arvrexp.png";
+import banner from "../../assets/service/banner.png";
+import designexp from "../../assets/designexp/designexp.png";
 
 const slides = [
   {
     id: 1,
-    title: "Software Development",
+    title: "SaaS Products",
     buttonText: "View Our Work",
-    imageUrl: saas,
+    imageUrl: servicessaas,
+    href: "/saas",
   },
   {
     id: 2,
     title: "AR/VR Applications",
     buttonText: "Learn More",
-    imageUrl: webd,
+    imageUrl: arvrexp,
+    href: "/ar-vr",
   },
   {
     id: 3,
-    title: "iOS/Android App Development",
+    title: "3D Generalist",
     buttonText: "Learn More",
-    imageUrl: game,
+    imageUrl: banner,
+    href: "/vfx",
   },
   {
     id: 4,
     title: "Web Development",
     buttonText: "View Our Work",
-    imageUrl: saas,
+    imageUrl: webexp,
+    href: "/web",
   },
   {
     id: 5,
     title: "Game Development",
     buttonText: "Learn More",
-    imageUrl: webd,
+    imageUrl: gamedev,
+    href: "/game",
   },
   {
     id: 6,
-    title: "3D Pipeline Services",
+    title: "Design Consultancy",
     buttonText: "Learn More",
-    imageUrl: game,
-  },
-  {
-    id: 7,
-    title: "UI/UX Design",
-    buttonText: "Learn More",
-    imageUrl: webd,
-  },
-  {
-    id: 8,
-    title: "Creative Consulting",
-    buttonText: "Learn More",
-    imageUrl: game,
+    imageUrl: designexp,
+    href: "/design",
   },
 ];
 
@@ -121,7 +121,7 @@ const ScrollSlideshow = () => {
         return (
           <div
             key={slide.id}
-            className="absolute inset-0 h-full w-full"
+            className="absolute inset-0 h-contain w-contain"
             style={{
               backgroundImage: `url(${slide.imageUrl})`,
               backgroundSize: "cover",
@@ -136,9 +136,12 @@ const ScrollSlideshow = () => {
               <h2 className="text-white text-4xl md:text-6xl font-bold mb-4">
                 {slide.title}
               </h2>
-              <button className="bg-green-500 text-white px-6 py-3 rounded-full object-contain">
+              <a
+                href={slide.href}
+                className="bg-green-500 text-white px-6 py-3 rounded-full object-contain"
+              >
                 {slide.buttonText}
-              </button>
+              </a>
             </div>
           </div>
         );
@@ -146,7 +149,7 @@ const ScrollSlideshow = () => {
       {isLastSlide && (
         <button
           onClick={scrollToTop}
-          className="absolute bottom-4 left-8 transform -translate-x-1/2 z-50 transition-opacity duration-300 ease-in-out"
+          className="absolute bottom-4 left-14 transform -translate-x-1/2 z-50 transition-opacity duration-300 ease-in-out"
           style={{ opacity: isLastSlide ? 1 : 0 }}
         >
           <img src={upbutton} alt="Go to top" className="w-18 h-12" />

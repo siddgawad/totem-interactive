@@ -98,12 +98,12 @@ const Pets = () => {
 
           {/* Outcomes Section */}
           <div className="my-8 p-4">
-            <h1 className="text-3xl opacity-100 text-center font-inter uppercase md:text-3xl">
+            <h1 className="text-3xl opacity-100 text-center font-inter uppercase md:text-3xl ">
               Outcomes
             </h1>
           </div>
 
-          <div className="p-4 font-inter md:text-xl m-4">
+          <div className="p-4 font-inter md:text-xl m-4 text-center">
             <p>
               The Pets Paradise app quickly gained popularity among pet owners
               for its intuitive design and extensive product offerings. The
@@ -121,7 +121,7 @@ const Pets = () => {
         </main>
 
         {/* Sidebar */}
-        <div className="w-full md:w-1/4 p-4 font-inter">
+        <div className="w-full md:w-1/4 p-4 font-exo2 uppercase">
           <div className="sticky top-[30%]">
             <h3 className="opacity-60 p-4">Industry</h3>
             <h2 className="p-4">Game Development</h2>

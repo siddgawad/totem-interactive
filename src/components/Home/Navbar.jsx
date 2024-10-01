@@ -49,23 +49,31 @@ export default function Navbar({
   return (
     <div className="font-['Exo 2']">
       {/* Transparent Navbar */}
-      <nav className="fixed w-full flex justify-between items-center p-4 sm:p-6 md:p-8 bg-black h-12 z-20">
+      <nav className="fixed w-full flex justify-between items-center p-4 sm:p-6 md:p-8 bg-black h-16 z-20">
         <div className="flex items-center">
           {/* Logo */}
           <a href="/" className="text-white">
-            <img src={logo} alt="Logo" className="h-8 sm:h-10 m-2" />
+            <img src={logo} alt="Logo" className="h-10 sm:h-10 m-2 mt-4 mb-4" />
           </a>
         </div>
-        <div className="flex space-x-2 sm:space-x-4">
+        <div className="flex space-x-2 sm:space-x-4 ">
+          <button onClick={() => toggleNav("services")} className="text-white">
+            <img
+              src={CustomIcon}
+              alt="Custom Icon"
+              className="h-5 sm:h-5 pr-2"
+            />
+          </button>
           <button
             onClick={() => toggleNav("main")}
             ref={mainButtonRef}
             className="text-white"
           >
-            <img src={CustomIcon2} alt="Custom Icon" className="h-5 sm:h-6" />
-          </button>
-          <button onClick={() => toggleNav("services")} className="text-white">
-            <img src={CustomIcon} alt="Custom Icon" className="h-5 sm:h-6" />
+            <img
+              src={CustomIcon2}
+              alt="Custom Icon"
+              className="h-5 sm:h-5 pr-2"
+            />
           </button>
         </div>
       </nav>
@@ -89,7 +97,7 @@ export default function Navbar({
           {activeSection === "main" && (
             <div className="flex flex-col items-start w-full sm:flex-row  p-4 lg:p-16 sm:p-12 md:p-12">
               <div className="w-full sm:w-1/2 mb-8 sm:mb-0">
-                <h2 className="text-[#979797] text-4xl sm:text-2xl  lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-12">
+                <h2 className="text-[#979797] text-3xl sm:text-4xl  lg:text-7xl xl:text-8xl font-bold mb-8 mt-10 ml- ">
                   SITEMAP
                 </h2>
                 <ul className="text-white space-y-4 sm:space-y-6">
@@ -119,6 +127,16 @@ export default function Navbar({
                       CONTACT
                     </a>
                   </li>
+
+                  <li className="text-2xl sm:text-3xl md:text-[42px] w-full lg:text-5xl xl:text-6xl font-semibold">
+                    <a
+                      href="/CaseStudies"
+                      className="text-white hover:text-green-500 transition-colors duration-200"
+                    >
+                      CASE STUDIES
+                    </a>
+                  </li>
+
                   <li className="text-2xl sm:text-3xl md:text-[42px] w-full lg:text-5xl xl:text-6xl font-semibold">
                     <a
                       href="/join"
@@ -137,15 +155,15 @@ export default function Navbar({
                   </li>
                 </ul>
               </div>
-              <div className="absolute flex-end top-8 right-8 sm:bottom-12 sm:right-12 md:bottom-16 md:right-16">
-                <h2 className="text-[#979797] flex flex-col items-end text-xl sm:text-xl  lg:text-4xl xl:text-8xl font-bold  sm:mb-6">
+              <div className="absolute flex-end  right-10 sm:right-12  md:right-20">
+                <h2 className="text-[#979797] text-4xl sm:text-4xl  lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-8 mt-10  ">
                   Socials
                 </h2>
                 <ul className="text-[#d5d5d5] flex flex-col items-end text-3xl sm:text-2xl  md:text-[26px] font-medium space-y-4">
                   <li>
                     <a
                       href="https://www.linkedin.com/company/totem-interactive/"
-                      className="text-white hover:text-green-500 transition-colors duration-200 text-xl sm:text-2xl md:text-3xl lg:text-6xl xl:text-6xl"
+                      className="text-white hover:text-green-500 transition-colors duration-200 text-xl sm:text-2xl md:text-3xl lg:text-6xl xl:text-6xl pt-2"
                     >
                       LinkedIn
                     </a>
@@ -171,7 +189,7 @@ export default function Navbar({
             </div>
           )}
           {navOpen && activeSection === "services" && (
-            <div className="w-full p-4 sm:p-8 md:p-12 lg:p-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="w-full p-4 mt-8 sm:p-8 md:p-12 lg:p-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {services.map((service, index) => (
                 <a
                   key={index}

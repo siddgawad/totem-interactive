@@ -8,11 +8,11 @@ import ContactPage from "./pages/ContactUs";
 import Services from "./pages/Services";
 import JoinUs from "./pages/JoinUs";
 import Web from "./pages/SERVICES/Web";
-import Vfx from "./pages/SERVICES/Vfx";
+import Threed from "./pages/SERVICES/Threed";
 import Design from "./pages/SERVICES/Design";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Saas from "./pages/SERVICES/Saas";
-import Game from "./pages/SERVICES/GameDev";
+import GameDev from "../src/pages/SERVICES/GameDev";
 // import CaseStudies from './pages/CaseStudies'
 import CaseStudyPage from "./pages/case1";
 import ArVr from "./pages/SERVICES/ArVr";
@@ -40,10 +40,10 @@ const App = () => {
 
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/join" element={<JoinUs />} />
-          <Route path="/game" element={<Game />} />
+          <Route path="/game" element={<GameDev />} />
           <Route path="/saas" element={<Saas />} />
           <Route path="/web" element={<Web />} />
-          <Route path="/vfx" element={<Vfx />} />
+          <Route path="/vfx" element={<Threed />} />
           <Route path="/design" element={<Design />} />
           <Route path="/ar-vr" element={<ArVr />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

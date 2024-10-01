@@ -21,9 +21,9 @@ const images = [
 
 const VideoContainer = () => {
   return (
-    <div className="bg-[#000e00] w-full aspect-[16/9]  sm:aspect-w-16 sm:aspect-h-16 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-21 lg:aspect-h-9">
+    <div className="bg-[#000e00] w-contain aspect-[16/9]  sm:aspect-w-16 sm:aspect-h-16 md:aspect-w-16 md:aspect-h-9 lg:aspect-w-21 lg:aspect-h-9 m-2">
       <video
-        className="bg-[#000e00] w-full h-full object-cover rounded-lg shadow-lg"
+        className="bg-[#000e00] w-full h-full object-cover"
         autoPlay
         loop
         muted
@@ -50,17 +50,17 @@ const Projects = () => {
         />
       </div>
       <div class="bg-[#000e00]">
-        <section className=" bg-[#000e00] max-w-7xl mx-auto px-4 py-20 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-          <h1 className="text-center font-bold font-exo2 text-2xl mb-8 text-white">
+        <section className=" bg-[#000e00] max-w-7xl mx-auto px-4 py-12 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+          <h1 className="text-center font-bold font-exo2 text-2xl mb-8 text-white pt-10">
             OUR SERVICES
           </h1>
           <VideoContainer />
         </section>
       </div>
       <div className="bg-[#000e00]">
-        <div className="w-full flex  flex-col md:flex-row pb-20">
-          <div className="text-[16px] md:text-[33.20px] font-medium font-['Inter'] text-white max-w-[90%] md:max-w-[800px] text-center ml-4">
-            <p>
+        <div className="w-full flex  flex-col md:flex-row pb-10">
+          <div className="text-[18px] md:text-[25px] font-medium font-inter text-white ">
+            <p className="text-center justify-center flex p-6">
               Totem Interactive is a rising force in digital innovation,
               specializing in software development, AR/VR applications, mobile
               app development, web development, game creation, and 3D pipeline

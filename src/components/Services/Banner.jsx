@@ -10,7 +10,9 @@ const Banner = ({ backgroundImage, text, height }) => {
       }}
     >
       <div className="bg-transparent p-4 rounded-lg">
-        <h1 className="text-white text-4xl font-bold text-center">{text}</h1>
+        <h1 className="text-white text-4xl font-bold text-center uppercase font-exo2">
+          {text}
+        </h1>
       </div>
     </div>
   );

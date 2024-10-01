@@ -33,7 +33,7 @@ const Layout = () => {
             </div>
           </div>
           <div className="w-full p-4 my-4 sm:my-6 md:my-8">
-            <p className="text-sm sm:text-base md:text-lg font-inter">
+            <p className="text-sm sm:text-base md:text-lg font-inter text-center">
               Crakk: The Run Game is an action-packed endless runner inspired by
               the movie "Crakk," starring Vidyut Jamwal, Arjun Rampal, and Nora
               Fatehi. The game features multiple maps and three dynamic
@@ -56,7 +56,7 @@ const Layout = () => {
             </h1>
           </div>
           <div className="p-4">
-            <p className="text-sm sm:text-base md:text-lg font-inter">
+            <p className="text-sm sm:text-base md:text-lg font-inter text-center">
               Crakk: The Run Game was designed to immerse players in the
               high-octane world of the movie "Crakk." The game allows players to
               choose from three characters—Vidyut Jamwal, Arjun Rampal, and Nora
@@ -96,15 +96,27 @@ const Layout = () => {
             </p>
           </div>
         </div>
-        <div className="w-full lg:w-1/4 p-4 font-exo2">
+        <div className="w-full lg:w-1/4 p-4 font-exo2 uppercase">
           <div className="sticky top-[30%]">
-            <h3 className="opacity-60 p-4 text-sm sm:text-base">Industry</h3>
-            <h2 className="p-4 text-base sm:text-lg">Game Development</h2>
-            <h2 className="p-4 text-base sm:text-lg">User Experience</h2>
+            <h3 className="opacity-60 p-4 text-sm sm:text-base font-exo2">
+              Industry
+            </h3>
+            <h2 className="p-4 text-base sm:text-lg font-exo2">
+              Game Development
+            </h2>
+            <h2 className="p-4 text-base sm:text-lg font-exo2">
+              User Experience
+            </h2>
             <div className="my-8"></div>
-            <h3 className="opacity-60 p-4 text-sm sm:text-base">Services</h3>
-            <h2 className="p-4 text-base sm:text-lg">Game Development</h2>
-            <h2 className="p-4 text-base sm:text-lg">User Experience</h2>
+            <h3 className="opacity-60 p-4 text-sm sm:text-base font-exo2">
+              Services
+            </h3>
+            <h2 className="p-4 text-base sm:text-lg font-exo2">
+              Game Development
+            </h2>
+            <h2 className="p-4 text-base sm:text-lg font-exo2">
+              User Experience
+            </h2>
           </div>
         </div>
       </div>

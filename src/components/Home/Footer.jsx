@@ -75,7 +75,7 @@ const Footer = () => {
                 {" "}
                 <li>Services</li>{" "}
               </a>
-              <a href="/">
+              <a href="/CaseStudies">
                 <li>Case Studies</li>{" "}
               </a>
               <a href="/contact">
