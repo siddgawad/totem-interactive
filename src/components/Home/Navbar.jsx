@@ -49,11 +49,11 @@ export default function Navbar({
   return (
     <div className="font-['Exo 2']">
       {/* Transparent Navbar */}
-      <nav className="fixed w-full flex justify-between items-center p-4 sm:p-6 md:p-8 bg-black h-16 z-20">
+      <nav className="fixed w-full flex justify-between items-center p-4 sm:p-6 md:p-8 bg-black h-4 z-20">
         <div className="flex items-center">
           {/* Logo */}
           <a href="/" className="text-white">
-            <img src={logo} alt="Logo" className="h-10 sm:h-10 m-2 mt-4 mb-4" />
+            <img src={logo} alt="Logo" className="h-4 sm:h-6 m-2 mt-2" />
           </a>
         </div>
         <div className="flex space-x-2 sm:space-x-4 ">
@@ -61,7 +61,7 @@ export default function Navbar({
             <img
               src={CustomIcon}
               alt="Custom Icon"
-              className="h-5 sm:h-5 pr-2"
+              className="h-4 sm:h-4 pr-2"
             />
           </button>
           <button
@@ -72,7 +72,7 @@ export default function Navbar({
             <img
               src={CustomIcon2}
               alt="Custom Icon"
-              className="h-5 sm:h-5 pr-2"
+              className="h-4 sm:h-4 pr-2"
             />
           </button>
         </div>

@@ -96,7 +96,7 @@ const ContactPage = () => {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-1/2 bg-black bg-opacity-60 p-6 md:p-12 rounded-xl backdrop-filter backdrop-blur-lg shadow-lg ">
+          <div className="w-full md:w-1/2 bg-black bg-opacity-60 p-6 md:p-12 backdrop-filter backdrop-blur-lg shadow-lg ">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <input
@@ -106,7 +106,7 @@ const ContactPage = () => {
                   placeholder="Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
+                  className="mt-1 block w-full  bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
                   required
                 />
               </div>
@@ -118,7 +118,7 @@ const ContactPage = () => {
                   placeholder="Contact"
                   value={formData.contactNo}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
+                  className="mt-1 block w-full bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
                   required
                 />
               </div>
@@ -130,7 +130,7 @@ const ContactPage = () => {
                   placeholder="Email ID"
                   value={formData.emailId}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
+                  className="mt-1 block w-full  bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
                   required
                 />
               </div>
@@ -142,14 +142,14 @@ const ContactPage = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows="4"
-                  className="mt-1 block w-full rounded-md bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
+                  className="mt-1 block w-full  bg-transparent border-none shadow-sm focus:outline-none focus:ring-0 text-gray-300"
                   required
                 ></textarea>
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-[#02c503] hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 font-exo2"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent  shadow-sm text-sm font-medium text-black bg-[#02c503] hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 font-exo2"
                 >
                   SUBMIT
                 </button>

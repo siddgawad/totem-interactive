@@ -21,7 +21,7 @@ const caseStudies = [
 const CaseStudyCard = ({ title, image, href }) => (
   <Link
     to={href}
-    className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 mt-10 text-center flex flex-col"
+    className="bg-gray-900  overflow-hidden  transition-transform duration-300 hover:scale-105 mt-10 text-center flex flex-col"
   >
     <div className="relative pt-[75%] overflow-hidden">
       <img
